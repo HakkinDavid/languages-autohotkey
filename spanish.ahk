@@ -36,10 +36,8 @@
         SEND "ñ"
     else if (key.Input == "N")
         SEND "Ñ"
-    else {
-        SEND "~"
+    else
         SEND key.Input
-    }
     return
 }
 
@@ -51,9 +49,17 @@
         SEND "ü"
     else if (key.Input == "U")
         SEND "Ü"
-    else {
-        SEND ";"
+    else
         SEND key.Input
-    }
+    return
+}
+
+~Ctrl & SC035::{
+    SEND "¿"
+    return
+}
+
+~Ctrl & SC002::{
+    SEND "¡"
     return
 }
