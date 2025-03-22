@@ -91,7 +91,7 @@
 }
 
 ; Carón: Alt derecho + tecla de mayor que (>) [SC053]
-~RAlt & SC053:: {
+~RAlt & SC034:: {
     key := InputHook("B C I L1 M E")
     key.Start()
     key.Wait()
@@ -121,7 +121,7 @@
 }
 
 ; Acento circunflejo: Alt derecho + tecla de menor que (<) [SC051]
-~RAlt & SC051:: {
+~RAlt & SC033:: {
     key := InputHook("B C I L1 M E")
     key.Start()
     key.Wait()
@@ -149,8 +149,6 @@
         Send key.Input
     return
 }
-
-#Requires AutoHotkey >=2.0
 
 ; Diéresis estándar: Alt derecho + tecla de dos puntos (:) [SC027]
 ~RAlt & SC027:: {
